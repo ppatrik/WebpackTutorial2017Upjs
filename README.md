@@ -1,4 +1,6 @@
-0. priprava npm balickovacieho nastroja
+# Presentation notes
+
+## 0. priprava npm balickovacieho nastroja
 
     npm init # inicializacia
     npm install balik --save # instalacia balika s ulozenim
@@ -6,7 +8,7 @@
     npm update # update balikov v package.json, prepise aj verzie v subore package.json
     npm install # nainstaluje baliky podla package.json (v zadanych verziach)
 
-1. vytvorime si jednoduchu stranku
+## 1. vytvorime si jednoduchu stranku
 
 *src/entry.js*
 
@@ -38,7 +40,7 @@
         font-family: "Comic Sans MS";
     }
 
-2. pridame do stranky pouzitie kniznice
+## 2. pridame do stranky pouzitie kniznice
 
 *src/entry.js*
 
@@ -59,13 +61,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 
-3. potreba zabalenia nasho projektu do jedneho suboru
+## 3. potreba zabalenia nasho projektu do jedneho suboru
 
-    webpack + nejake intro
+Intro pre webpack https://www.youtube.com/watch?v=bm7RlNEcQM0
 
     npm install webpack --save-dev
 
-4. prva kompilacia
+## 4. prva kompilacia
 
 *webpack.config.js*
 
@@ -87,7 +89,7 @@
 
     npm start
 
-5. lodash cez npm a nie cdn
+## 5. lodash cez npm a nie cdn
 
     npm install lodash
 
@@ -95,13 +97,16 @@
 
     import _ from 'lodash';
 
-6. webpack
+## 6. webpack
 
-7.
 * zmensenie kodu uglifyjs-webpack-plugin
 
     plugins: [
         new UglifyJSPlugin()
       ]
 
-source: https://webpack.js.org/guides/getting-started/
+# Zdroje
+
+* https://webpack.js.org/guides/getting-started/
+* https://www.youtube.com/watch?v=bm7RlNEcQM0 (Understanding webpack from inside out & Webpack 4 future)
+* https://www.youtube.com/watch?v=2EaP3a6E4B0 (15 less known webpack features)
